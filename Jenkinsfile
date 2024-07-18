@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url:'https://github.com/SatishAero/Performance_task.git'
+                git url:'https://github.com/SatishAero/Task_3_18_july_2024.git'
             }
         }
 
