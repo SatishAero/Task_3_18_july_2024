@@ -27,6 +27,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
+                    def tagName = "v1"
                     def imageName = "satishvarma123/performance:${tagName}"
                     docker.withRegistry("https://index.docker.io/v1/", DOCKER_CREDENTIALS_ID) {
                         docker.image(imageName).push()
